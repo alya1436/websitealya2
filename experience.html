@@ -1,0 +1,184 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body style="background-image: url('experience.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+    <title>Experience Page</title>
+<nav>
+        <a href="menu.html" target="utama">Menu</a>
+        <a href="biodata.html" target="utama">Biodata</a>
+        <a href="education.html" target="utama">Education</a>
+        <a href="experience.html" target="utama">Experience</a>
+        <a href="gallery.html" target="utama">Gallery</a>
+
+    </nav>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+        header p {
+            color: #7f8c8d;
+            font-size: 1em;
+        }
+
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            margin: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: #dfe4ea;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            position: relative;
+            margin: 20px 0;
+            width: 50%;
+            padding: 20px;
+            background: #fdfdfd;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .timeline-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 15px;
+            height: 15px;
+            background: #1abc9c;
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-item:nth-child(odd)::after {
+            right: -30px;
+        }
+        .timeline-item:nth-child(even)::after {
+            left: -30px;
+        }
+        .timeline-item h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #34495e;
+            display: flex;
+            align-items: center;
+        }
+        .timeline-item h3 i {
+            margin-right: 10px;
+            color: #1abc9c;
+        }
+        .timeline-item p {
+            margin: 5px 0;
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        .timeline-item span {
+            font-weight: bold;
+            color: #1abc9c;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 40px;
+            }
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            .timeline-item:nth-child(odd)::after,
+            .timeline-item:nth-child(even)::after {
+                left: 10px;
+            }
+        }
+    </style>
+    <!-- Adding FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Professional Experience</h1>
+            <p>A journey through my brother career milestones</p>
+        </header>
+        
+        <!-- Timeline Section -->
+        <div class="timeline">
+            <!-- Job 1 -->
+            <div class="timeline-item">
+                <h3><i class="fas fa-briefcase"></i> Human Resource Assistant</h3>
+                <p><span>Company:</span> O3 Corporate Services SDN BHD, Kuching</p>
+                <p><span>Duration:</span> 2024 (Present) </p>
+                <p><span>Responsibilities:</span> Handle administrative tasks like filing, scanning, and organizing
+documents.</p>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="timeline-item">
+                <h3><i class="fas fa-laptop-code"></i> Internship as Human Resource</h3>
+                <p><span>Company:</span> Jabatan Bekalan Air Luar Bandar, HQ Kuching</p>
+                <p><span>Duration:</span> 2023</p>
+                <p><span>Responsibilities:</span> Engaging in learning opportunities such as HR seminars, workshops,
+or networking events.</p>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="timeline-item">
+                <h3><i class="fas fa-code"></i> Sales Assistant / Promoter</h3>
+                <p><span>Company:</span>  OOTD By Omans, Kuching</p>
+                <p><span>Duration:</span> 2022 </p>
+                <p><span>Responsibilities:</span> Having good understading of the store's merchandise, including
+sizes, colors, materials, and current promotions or sales events.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

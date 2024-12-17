@@ -1,0 +1,165 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body style="background-image: url('education.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+    <title>Education Background</title>
+<nav>
+        <a href="menu.html" target="utama">Menu</a>
+        <a href="biodata.html" target="utama">Biodata</a>
+        <a href="education.html" target="utama">Education</a>
+        <a href="experience.html" target="utama">Experience</a>
+        <a href="gallery.html" target="utama">Gallery</a>
+
+    </nav>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1E90FF;
+            color: #1E90FF;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #778899;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #000000;
+        }
+        header p {
+            color: #000000;
+            font-size: 0.975em;
+        }
+
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            margin: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: #e1e5eb;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            position: relative;
+            margin: 20px 0;
+            width: 50%;
+            padding: 20px;
+            background: #fdfdfd;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 15px;
+            height: 15px;
+            background: #3498db;
+            border: 3px solid #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-item:nth-child(odd)::after {
+            right: -30px;
+        }
+        .timeline-item:nth-child(even)::after {
+            left: -30px;
+        }
+        .timeline-item h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #34495e;
+        }
+        .timeline-item p {
+            margin: 5px 0;
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        .timeline-item span {
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 40px;
+            }
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            .timeline-item:nth-child(odd)::after,
+            .timeline-item:nth-child(even)::after {
+                left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Education Background</h1>
+            <p>His academic journey through the years</p>
+        </header>
+        
+        <!-- Timeline Section -->
+        <div class="timeline">
+            <!-- High School -->
+            <div class="timeline-item">
+                <h3>High School</h3>
+                <p><span>Institution:</span> SMK ST JOSEPH, KUCHING </p>
+                <p><span>Graduation Year:</span> 2018</p>
+            </div>
+
+            <!-- High School -->
+            <div class="timeline-item">
+                <h3>STPM</h3>
+                <p><span>Institution:</span> SMK ST JOSEPH, KUCHING</p>
+                <p><span>Graduation Year:</span> 2020</p>
+            </div>
+
+            <!-- Bachelor Degree -->
+            <div class="timeline-item">
+                <h3>Bachelor Degree (with honors) Industrial Relations and Labour Studies</h3>
+                <p><span>Institution:</span> UNIVERSITY MALAYSIA SARAWAK (UNIMAS)</p>
+                <p><span>Graduation Year:</span> 2024</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
